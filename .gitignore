@@ -1,0 +1,8 @@
+# Misc
+/tmp
+.DS_Store
+node_modules
+.log
+.remote-sync.json
+.sass-cache
+vendor
