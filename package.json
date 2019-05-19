@@ -1,0 +1,37 @@
+{
+  "name": "ES6 Google Maps",
+  "version": "1.0.0",
+  "description": "Google maps api, as es6 style modules",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenscaff/es6-google-maps.git"
+  },
+  "author": "stephen scaff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenscaff/es6-google-maps/issues"
+  },
+  "homepage": "https://github.com/stephenscaff/es6-google-map#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^2.0.0-beta.2",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.2",
+    "eslint": "^5.15.1",
+    "eslint-config-eslint": "^5.0.1",
+    "eslint-plugin-node": "^8.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglifyes": "^0.2.1",
+    "jshint": "^2.10.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+}

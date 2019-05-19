@@ -1,0 +1,11 @@
+{
+  "name": "GoogleMapES6",
+  "version": "1.0.0",
+  "description": "ES6 style google maps ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Scaff",
+  "license": "DWTFYL"
+}
