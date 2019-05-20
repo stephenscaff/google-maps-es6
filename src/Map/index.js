@@ -5,11 +5,11 @@ import markerTmpl from './marker.tmpl'
 /**
  * Location Map
  * Main map rendering function that uses our GMaps API class
- * @param {string} el - Google Map selector 
+ * @param {string} el - Google Map selector
  */
 export function LocationMap(el) {
 
-  const gApiKey = 'AIzaSyCR1znF989WxRTbncT77BVOXyJ_dQLVztI'
+  const gApiKey = 'xxxxxxxxxxxxxxxxxxxxx'
   const gmapApi = new GoogleMapsApi(gApiKey)
   const mapEl   = document.querySelector(el)
   const data    = {
@@ -19,7 +19,7 @@ export function LocationMap(el) {
     title:   mapEl.dataset.title ? mapEl.dataset.title: "Map",
     zoom:    parseFloat(mapEl.dataset.zoom ? mapEl.dataset.zoom: 12),
   }
-
+  // Call map renderer
   gmapApi.load().then(() => {
     renderMap(mapEl, data)
  })
