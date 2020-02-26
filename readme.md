@@ -10,28 +10,41 @@ The js structure is as follows:
 
 ```
 -js
- |- MAP
-    |- GMapsApi.js - google maps api class
+ |- GMap
+    |- GoogleMapsApi.js - google maps api class
     |- marker.tmpl.js - custom marker template
     |- stylers.js - JSON styles and custom icon
     |- index.js - functions to render map, marker and infowindow
- |- app.js
+ |- index.js - import and init example
 ```
 
-## Useage
+## Install and Build
 
-
-**JS**
-
-Import map components and pass your map selector to `Map.LocationMap()`, like so:
+To build this project first install
 
 ```
-// app.js
+npm install
+```
 
-import * as Map from './components/Map'
+Then build it like
 
-Map.LocationMap('.js-map')
+```
+gulp
+```
 
+Or, just add `src/GMap` to your existing es6 project.
+
+
+## Usage
+
+Import map components then pass your Google Map selector and Google Maps api key to `Gmap($mapEl, $apiKey)`
+An example init is at `src/index.js`:
+
+
+```
+import * as Map from './GMap'
+
+Map.GMap('.js-map', 'YOUR_GOOGLE_MAPS_API_KEY_HERE')
 ```
 
 **Markup**
@@ -53,5 +66,29 @@ The required are `data-lat` and `data-lng`. For example:
   </div>
 </section>
 ```
+
+**Styles**
+Your map won't render unless it has a height defined. Without example above, that could look Like:
+
+```
+.map__wrap{
+  position: relative;
+  width: 100%;
+}
+
+.map__map {
+  width: 100%;
+  height: 100%;
+  min-height: 50em;
+}
+```
+
+**Info Window Template**
+Edit the info window popup template at `src/Gmap/marker.tmpl.js`
+
+
+**Google Maps Styles**
+Edit Google Map's styles JSON at `src/GMap/stylers.js`
+
 
 Have fun.

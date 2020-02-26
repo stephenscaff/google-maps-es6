@@ -1,37 +1,37 @@
 {
-  "name": "ES6 Google Maps",
+  "name": "es6googlemaps",
   "version": "1.0.0",
-  "description": "Google maps api, as es6 style modules",
-  "main": "gulpfile.js",
+  "description": "Google maps api, as es6 style modules.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenscaff/es6-google-maps.git"
+    "url": "git+https://github.com/stephenscaff/google-maps-es6"
   },
-  "author": "stephen scaff",
+  "keywords": [
+    "Google Maps",
+    "google maps api",
+    "es6 google maps",
+    "maps"
+  ],
+  "author": "Stephen Scaff",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephenscaff/es6-google-maps/issues"
+    "url": "https://github.com/stephenscaff/google-maps-es6#issues"
   },
-  "homepage": "https://github.com/stephenscaff/es6-google-map#readme",
+  "homepage": "https://github.com/stephenscaff/google-maps-es6#readme",
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-preset-env": "^2.0.0-beta.2",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "babelify": "^10.0.0",
-    "browserify": "^16.2.2",
-    "eslint": "^5.15.1",
-    "eslint-config-eslint": "^5.0.1",
-    "eslint-plugin-node": "^8.0.1",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglifyes": "^0.2.1",
-    "jshint": "^2.10.1",
+    "browserify": "^16.5.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^1.2.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
+  }
 }

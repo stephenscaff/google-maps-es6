@@ -7,9 +7,10 @@ import markerTmpl from './marker.tmpl'
  * Main map rendering function that uses our GMaps API class
  * @param {string} el - Google Map selector
  */
-export function LocationMap(el) {
+export function GMap(el, apiKey) {
 
-  const gApiKey = 'xxxxxxxxxxxxxxxxxxxxx'
+  const gApiKey = apiKey
+  console.log(gApiKey)
   const gmapApi = new GoogleMapsApi(gApiKey)
   const mapEl   = document.querySelector(el)
   const data    = {
