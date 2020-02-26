@@ -42,12 +42,12 @@ An example init is at `src/index.js`:
 
 
 ```
-import * as Map from './GMap'
+import * as Gmap from './GMap'
 
-Map.GMap('.js-map', 'YOUR_GOOGLE_MAPS_API_KEY_HERE')
+Gmap.GMap('.js-map', 'YOUR_GOOGLE_MAPS_API_KEY_HERE')
 ```
 
-**Markup**
+## Markup
 
 The map div uses uses data attributes to pass values to the map instance.
 The required are `data-lat` and `data-lng`. For example:
@@ -67,7 +67,7 @@ The required are `data-lat` and `data-lng`. For example:
 </section>
 ```
 
-**Styles**
+## Styles
 Your map won't render unless it has a height defined. Without example above, that could look Like:
 
 ```
@@ -83,11 +83,13 @@ Your map won't render unless it has a height defined. Without example above, tha
 }
 ```
 
-**Info Window Template**
+Odds are you already know that.
+
+## Info Window Template
 Edit the info window popup template at `src/Gmap/marker.tmpl.js`
 
 
-**Google Maps Styles**
+## Google Maps Styles
 Edit Google Map's styles JSON at `src/GMap/stylers.js`
 
 
